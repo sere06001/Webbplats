@@ -1,7 +1,8 @@
 .wrapper{
     text-align: center;
     display: grid;
-    width: 100px;
+    width: 250px;
+    height: 300px;
     grid-template-rows: 100px 100px 100px 100px;
     grid-template-areas: 
     "header"
@@ -9,5 +10,61 @@
     "main"
     "footer";
     border: solid black 2px;
-    margin: auto;
+    border-radius: 15px;
+    position: fixed;
+}
+
+header{
+    grid-area: header;
+    font-size: x-large;
+}
+
+nav{
+    grid-area: nav;
+}
+
+nav > ul{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    list-style: none;
+    font-size: x-large;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:focus{
+    color: purple;
+}
+
+a:hover{
+    color: purple;
+}
+
+a:active{
+    color: red;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.aboutme{
+    text-align: center;
+    font-size: x-large;
 }
