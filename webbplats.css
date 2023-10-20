@@ -1,31 +1,39 @@
 body{
     height: 98vh;
-    width: 98vw;
+    width: 97vw;
 }
 
 .wrapper{
     text-align: center;
     display: grid;
     width: 99vw;
-    height: 20vh;
-    grid-template-rows: 100px 100px 100px 100px;
+    height: 97vh;
+    grid-template-rows: 100px 100px auto 100px;
     grid-template-areas: 
     "header"
     "nav"
     "main"
     "footer";
-    border: solid black 2px;
     border-radius: 15px;
-    position: fixed
 }
 
 header{
     grid-area: header;
     font-size: x-large;
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    background-color: skyblue;
+    overflow: hidden;
 }
 
 nav{
     grid-area: nav;
+    border-bottom: solid black 2px;
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+    background-color: skyblue;
+    overflow: hidden;
 }
 
 nav > ul{
@@ -64,6 +72,13 @@ a:active{
 main{
     grid-area: main;
     display: grid;
+    font-size: large;
+}
+
+.img{
+    text-align: center;
+    margin: 0 auto;
+    height: 50vh;
 }
 
 footer{
@@ -80,6 +95,7 @@ footer{
 
 .blue{
     background-color: blue;
+    width: 10vw;
 }
 
 .red{
@@ -92,8 +108,10 @@ footer{
 
 .black{
     background-color: black;
+    width: 10vw;
 }
 
 .green{
     background-color: green;
+    height: 20vh;
 }
