@@ -1,37 +1,38 @@
 body{
     height: 98vh;
-    width: 97vw;
+    width: 99vw;
 }
 
 .wrapper{
     text-align: center;
     display: grid;
     width: 99vw;
-    height: 97vh;
-    grid-template-rows: 100px 100px auto 100px;
+    height: 98vh;
+    grid-template-rows: 100px 100px auto auto;
     grid-template-areas: 
     "header"
     "nav"
     "main"
     "footer";
-    border-radius: 15px;
 }
 
 header{
     grid-area: header;
     font-size: x-large;
-    border-top: solid black 2px;
-    border-left: solid black 2px;
-    border-right: solid black 2px;
+    border: solid black 2px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: none;
     background-color: skyblue;
     overflow: hidden;
 }
 
 nav{
     grid-area: nav;
-    border-bottom: solid black 2px;
-    border-left: solid black 2px;
-    border-right: solid black 2px;
+    border: solid black 2px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: none;
     background-color: skyblue;
     overflow: hidden;
 }
@@ -45,8 +46,14 @@ nav > ul{
     margin: 0;
 }
 
-a{
-    text-decoration: none;
+main{
+    grid-area: main;
+    display: grid;
+    font-size: large;
+}
+
+footer{
+    grid-area: footer;
 }
 
 a:link{
@@ -69,20 +76,10 @@ a:active{
     color: red;
 }
 
-main{
-    grid-area: main;
-    display: grid;
-    font-size: large;
-}
-
 .img{
     text-align: center;
     margin: 0 auto;
-    height: 50vh;
-}
-
-footer{
-    grid-area: footer;
+    height: 45vh;
 }
 
 .färgtabell{
