@@ -1,6 +1,7 @@
 body{
     height: 98vh;
     width: 99vw;
+    background-color: skyblue /*Ändrar bakgrundsfärg till 'skyblue'*/
 }
 
 .wrapper{
@@ -23,7 +24,7 @@ header{
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
     border-bottom: none;
-    background-color: skyblue;
+    background-color: rgb(0, 206, 235);
     overflow: hidden;
 }
 
@@ -33,7 +34,7 @@ nav{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top: none;
-    background-color: skyblue;
+    background-color: rgb(0, 206, 235);
     overflow: hidden;
 }
 
@@ -57,11 +58,11 @@ footer{
 }
 
 a:link{
-    color: blue;
+    color: blueviolet;
 }
 
 a:visited{
-    color: blue;
+    color: blueviolet;
 }
 
 a:focus{
@@ -73,42 +74,34 @@ a:hover{
 }
 
 a:active{
-    color: red;
+    color: blue;
 }
 
-.img{
+.imgTeknikum{
     text-align: center;
-    margin: 0 auto;
-    height: 45vh;
+    margin: 0;
+    height: 50vh;
 }
 
-.färgtabell{
-    border: solid black 1px;
-    border-collapse: collapse;
-    width: 30vw;
+.imgNova{
+    text-align: center;
+    margin: 0;
     height: 60vh;
+}
+
+table, th, td{
+    border: solid black 1px;
+    padding: 8px;
     margin: auto;
+    border-collapse: collapse; /*Kollapsar den yttre borden, det finns 2 av default runt tabeller*/
+    table-layout: fixed;
+    width: 150px;
 }
 
-.blue{
-    background-color: blue;
-    width: 10vw;
-}
-
-.red{
-    background-color: red;
-}
-
-.yellow{
+tr:nth-child(even){
     background-color: yellow;
 }
 
-.black{
-    background-color: black;
-    width: 10vw;
-}
-
-.green{
-    background-color: green;
-    height: 20vh;
+tr:nth-child(odd){
+    background-color: red;
 }
