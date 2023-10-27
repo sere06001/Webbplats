@@ -38,13 +38,25 @@ nav{
     overflow: hidden;
 }
 
-nav > ol{
+nav > ul{
     display: grid;
+    width: 50%;
     grid-template-columns: 1fr 1fr 1fr; /*Anger bredden på listans kolumner till 1 fraction, när alla 3 listelement är 1fr så blir alla 1/3 breda*/
     list-style: none; /*Ändrar punkten som indikerar nästa artikel i listan, när den är 'none' tar den bort punkten helt*/
-    font-size: x-large; 
     padding: 0; /*Sätter padding på listan till 0, detta tar bort all padding*/
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+button{
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: large;
+    background-color: rgb(red, green, blue);
+    color: rgb(red, green, blue);
 }
 
 main{
@@ -67,7 +79,7 @@ footer{
 }
 
 a:link{
-    color: blueviolet; /*Ändrar färgen av alla linkar till 'blueviolet'*/
+    color: blueviolet; /*Ändrar färgen av alla icke klickta länkar till 'blueviolet'*/
 }
 
 a:visited{
@@ -90,12 +102,14 @@ a:active{
     text-align: center;
     margin: 0;
     height: 50vh;
+    border: solid black 2px;
 }
 
 .imgNova{
     text-align: center;
     margin: 0;
-    height: 60vh;
+    height: 55vh;
+    border: solid black 2px;
 }
 
 table, th, td{
