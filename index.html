@@ -1,21 +1,21 @@
-<!DOCTYPE html> <!--Förklarar filen som en HTML fil-->
-<html>
+<!DOCTYPE html> <!--Definierar filen som en HTML fil-->
+<html lang="sv"> <!--Lang deklarerar webbsidans språk vilket hjälper sökmotorer och webbläsare-->
     <head>
-        <title>Min Webbplats</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="webbplats.css"> <!--Länkar CSS filen till-->
+        <title>Min Webbplats</title> <!--Ändrar titeln av fliken till 'Min Webbplats'-->
+        <meta charset="utf-8"> <!--Meta berättar information för sökmotorn och Charset defnierar vilken teckenkodning som används. 'utf-8' täcker nästan alla tecken i världen och rekommenderas av HTML5 specifikationerna-->
+        <link rel="stylesheet" href="webbplats.css"> <!--Länkar CSS filen till detta HTML dokument och specifierar relationen mellan HTML dokumentet och CSS filen-->
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
     <body>
-        <div class="wrapper"> <!--Skapar klassen "wrapper" för detta div element-->
-            <header>
-                <h1>Meny</h1> <!--Skapar rubrik för grid:en-->
+        <div class="wrapper"> <!--Skapar klassen "wrapper" för detta div element, här använder jag klass istället för id eftersom att jag använder 'wrapper' i flera HTML filer-->
+            <header> <!--Skapar sidhuvud-->
+                <h1>Meny</h1> <!--Skapar rubriken 'Meny' för grid:en-->
             </header>
             <nav>
                 <ul> <!--Skapar en oordnad lista-->
-                    <li><a href="index.html">Startsida</a></li> <!--Skapar ett listelement som länkar till startsidan-->
-                    <li><a href="webbsida2.html">Sida 2</a></li> <!--Skapar ett listelement som länkar till andra sidan-->
-                    <li><a href="webbsida3.html">Sida 3</a></li> <!--Skapar ett listelement som länkar till tredje sidan-->
+                    <li><a href="index.html">Startsida</a></li> <!--Skapar ett listelement som länkar till startsidan och visar texten 'Startsida'-->
+                    <li><a href="webbsida2.html">Sida 2</a></li> <!--Skapar ett listelement som länkar till andra sidan och visar texten 'Sida 2'-->
+                    <li><a href="webbsida3.html">Sida 3</a></li> <!--Skapar ett listelement som länkar till tredje sidan och visar texten 'Sida 3'-->
                 </ul>
             </nav>
             <main>
@@ -24,9 +24,9 @@
                     <p>Jag heter Sean och är 17 år gammal. Jag fyller år den 4:de Oktober så jag fyllde 17 för inte särskilt länge sedan.</p> <!--Textstycke-->
                     <p>Jag går på Teknik programmet på Teknikum, vi lär oss programmera i C# och skapa webbsidor i HTML och CSS vilket jag tycker är roligt.</p>
                     <p>Jag vill gärna lära mig mer och kunna jobba med att programmera både webbsidor och program på datorn.</p>
-                    <h3>Här är en klickbar bild på Teknikum som leder till skolans hemsida.</h3>
+                    <h3>Här är en klickbar bild på Teknikum som leder till skolans hemsida.</h3> <!--En till underrubrik-->
                     <a href="https://teknikum.se"> <!--Länkar bilden till Teknikums hemsida-->
-                        <img class="imgTeknikum" src="teknikum.jpg" alt="Teknikum skolan i Växjö"> <!--Lägger in en bild på Teknikum-->
+                        <img id="imgTeknikum" src="teknikum.jpg" alt="Teknikum skolan i Växjö"> <!--Src berättar för dokumentet vad bilden som ska visas upp heter och lägga in en bild på Teknikum. Alt skriver ut texten efter alt ifall bilden inte visas upp. Jag valde id eftersom att jag vill ändra bildens egenskaper men jag använder bara bilden en gång-->
                     </a>
                 </section>
             </main>
