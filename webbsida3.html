@@ -4,7 +4,7 @@
         <title>Sida 3</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="webbplats.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="wrapper">
@@ -14,38 +14,31 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">
-                            <button type="button">Startsida</button>
-                        </a>
-                    </li> <!--Skapar ett listelement som länkar till startsidan och visar texten 'Startsida'-->
+                        <button type="button" onclick="window.location.href='index.html'">Startsida</button>
+                    </li>
                     <li>
-                        <a href="webbsida2.html">
-                            <button type="button">Sida 2</button>
-                        </a>
-                    </li> <!--Skapar ett listelement som länkar till andra sidan och visar texten 'Sida 2'-->
+                        <button type="button" onclick="window.location.href='webbsida2.html'">Sida 2</button>
+                    </li>
                     <li>
-                        <a href="webbsida3.html">
-                            <button type="button">Sida 3</button>
-                        </a>
-                    </li> <!--Skapar ett listelement som länkar till tredje sidan och visar texten 'Sida 3'-->
+                        <button type="button" onclick="window.location.href='webbsida3.html'">Sida 3</button>
+                    </li>
                 </ul>
             </nav>
             <main>
                 <section>
                     <h2>Jag älskar katter, så här är två roliga länkar om katter.</h2>
                     <ul>
-                        <li><a href="https://cataas.com/cat/says/this%20image%20is%20different%20for%20everyone">Ny katt varje gång sidan laddas om</a></li> <!--Lägger en länk på texten "Bilder på katter"-->
+                        <li><a href="https://cataas.com/cat/says/this%20image%20is%20different%20for%20everyone">Ny katt varje gång sidan laddas om</a></li> <!--Länkar texten "Bilder på katter"-->
                         <li><a href="https://cat-bounce.com/">Kasta-katt spel</a></li>
                     </ul>
                 </section>
                 <section>
                     <h3>Själv har jag en katt som heter Nova, här är några gulliga bilder på henne</h3>
-                    <img class="imgNova" src="nova1.jpg" alt="gullig bild på Nova">
+                    <img class="imgNova" src="nova1.jpg" alt="gullig bild på Nova"> <!--Jag använder klass här eftersom jag vill att båda bilderna ändras tillsammans när jag redigerar i CSS filen-->
                     <img class="imgNova" src="nova2.jpg" alt="en till gullig bild på Nova">
                 </section>
             </main>
             <footer>
-
             </footer>
         </div>
     </body>

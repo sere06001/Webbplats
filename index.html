@@ -4,46 +4,39 @@
         <title>Min Webbplats</title> <!--Ändrar titeln av fliken till 'Min Webbplats'-->
         <meta charset="utf-8"> <!--Meta berättar information för sökmotorn och Charset defnierar vilken teckenkodning som används. 'utf-8' täcker nästan alla tecken i världen och rekommenderas av HTML5 specifikationerna-->
         <link rel="stylesheet" href="webbplats.css"> <!--Länkar CSS filen till detta HTML dokument och specifierar relationen mellan HTML dokumentet och CSS filen-->
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <div class="wrapper"> <!--Skapar klassen "wrapper" för detta div element, här använder jag klass istället för id eftersom att jag använder 'wrapper' i flera HTML filer-->
-            <header> <!--Skapar sidhuvud-->
+            <header> <!--Sidhuvud-->
                 <h1>Meny</h1> <!--Skapar rubriken 'Meny' för grid:en-->
             </header>
             <nav>
-                <ul>
+                <ul> <!--Skapar en oordnad lista-->
+                    <li> <!--Skapar ett listelement-->
+                        <button type="button" onclick="window.location.href='index.html'">Startsida</button> <!--Skapar en knapp som länkar till index.html filen och visar texten 'Startsida' inom knappen. När knappen klickas leder den användaren till startsidan-->
+                    </li> 
                     <li>
-                        <a href="index.html">
-                            <button type="button">Startsida</button>
-                        </a>
-                    </li> <!--Skapar ett listelement som länkar till startsidan och visar texten 'Startsida'-->
+                        <button type="button" onclick="window.location.href='webbsida2.html'">Sida 2</button> <!--Skapar en knapp som länkar till webbsida2.html filen och visar texten 'Sida 2' inom knappen. När knappen klickas leder den användaren till sida 2-->
+                    </li>
                     <li>
-                        <a href="webbsida2.html">
-                            <button type="button">Sida 2</button>
-                        </a>
-                    </li> <!--Skapar ett listelement som länkar till andra sidan och visar texten 'Sida 2'-->
-                    <li>
-                        <a href="webbsida3.html">
-                            <button type="button">Sida 3</button>
-                        </a>
-                    </li> <!--Skapar ett listelement som länkar till tredje sidan och visar texten 'Sida 3'-->
+                        <button type="button" onclick="window.location.href='webbsida3.html'">Sida 3</button> <!--Skapar en knapp som länkar till webbsida3.html filen och visar texten 'Sida 3' inom knappen. När knappen klickas leder den användaren till sida 3-->
+                    </li>
                 </ul>
             </nav>
             <main>
                 <section>
-                    <h2>Om mig</h2> <!--Skapar underrubrik-->
+                    <h2>Om mig</h2> <!--Underrubrik-->
                     <p>Jag heter Sean och är 17 år gammal. Jag fyller år den 4:de Oktober så jag fyllde 17 för inte särskilt länge sedan.</p> <!--Textstycke-->
                     <p>Jag går på Teknik programmet på Teknikum, vi lär oss programmera i C# och skapa webbsidor i HTML och CSS vilket jag tycker är roligt.</p>
                     <p>Jag vill gärna lära mig mer och kunna jobba med att programmera både webbsidor och program på datorn.</p>
-                    <h3>Här är en klickbar bild på Teknikum som leder till skolans hemsida.</h3> <!--En till underrubrik-->
+                    <h3>Här är en klickbar bild på Teknikum som leder till skolans hemsida.</h3> <!--Under-underrubrik-->
                     <a href="https://teknikum.se"> <!--Länkar bilden till Teknikums hemsida-->
-                        <img id="imgTeknikum" src="teknikum.jpg" alt="Teknikum skolan i Växjö"> <!--Src berättar för dokumentet vad bilden som ska visas upp heter och lägga in en bild på Teknikum. Alt skriver ut texten efter alt ifall bilden inte visas upp. Jag valde id eftersom att jag vill ändra bildens egenskaper men jag använder bara bilden en gång-->
+                        <img id="imgTeknikum" src="teknikum.jpg" alt="Teknikum skolan i Växjö"> <!--Src berättar för dokumentet vad bilden som ska visas upp heter och lägger in en bild på Teknikum. Alt skriver ut texten efter alt ifall bilden inte visas upp. Jag valde id eftersom att jag vill ändra bildens egenskaper men jag använder bara bilden en gång-->
                     </a>
                 </section>
             </main>
-            <footer>
-
+            <footer> <!--Sidfot-->
             </footer>
         </div>
     </body>

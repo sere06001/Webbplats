@@ -51,12 +51,16 @@ nav > ul{
 
 button{
     border: solid black 2px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 150px;
     height: 40px;
     font-size: large;
-    background-color: rgb(red, green, blue);
-    color: rgb(red, green, blue);
+    background-color: rgba(137, 43, 226, 0.392);;
+    cursor: pointer; /*Gör muspekaren till handen som visar att någonting är klickbart*/
+}
+
+button:hover{ /*Deklarationer skrivet inom detta kodblock ändrar bara egenskaper på knapparna när muspekaren är över dem*/
+    background-color: rgba(95, 43, 226, 0.71); /*Ändrar färgen på knappen när villkoret för detta kodblock är sant*/
 }
 
 main{
