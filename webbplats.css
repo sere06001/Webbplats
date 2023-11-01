@@ -1,16 +1,14 @@
 body{
-    height: 98vh; /*Sätter höjden av sidan till 98vh*/
-    width: 99vw; /*Sätter bredden av sidan till 99vw*/
     background-color: skyblue /*Ändrar bakgrundsfärg på sidan till 'skyblue'*/
 }
 
 .wrapper{
     text-align: center; /*Centrerar all text som står inuti klassen 'wrapper'*/
-    display: grid; /**/
-    width: 99vw;
-    height: 98vh;
-    grid-template-rows: 100px 100px auto auto;
-    grid-template-areas: 
+    display: grid; /*Gör så att wrapper blir en grid container*/
+    width: 99vw; /*Sätter bredden på wrapper till 99vw*/
+    height: 98vh; /*Sätter höjden av wrapper till 98vh*/
+    grid-template-rows: 100px 100px auto auto; /*Skapar fyra separata rader till grid:en*/
+    grid-template-areas: /*Namnger grid:ens areor till 'header', 'nav', 'main' och 'footer*/
     "header"
     "nav"
     "main"
@@ -18,7 +16,7 @@ body{
 }
 
 header{
-    grid-area: header; /**/
+    grid-area: header; /*Sätter headers grid area till 'header'*/
     font-size: x-large; /*Ändrar storleken av texten inom listan till 'x-large'*/
     border: solid black 2px; /*Skapar en svart färgad border som är 2 pixlar tjock*/
     border-top-right-radius: 15px; /*Rundar av borden längst uppe till höger så att det är en 1/4 av en cirkel med radien 15 pixlar*/
@@ -29,9 +27,9 @@ header{
 }
 
 nav{
-    grid-area: nav;
+    grid-area: nav; /*Sätter navs grid area till 'nav'*/
     border: solid black 2px;
-    border-bottom-left-radius: 15px; /*Rundar av borden längst nere till vänster så att det är en 1/4 av en cirkel med radien 15 pixlar*/
+    border-bottom-left-radius: 15px; /*Rundar av borden längst nere till vänster så att det är 1/4 av en cirkel med radien 15 pixlar*/
     border-bottom-right-radius: 15px; /*Rundar av borden längst nere till höger så att det är en 1/4 av en cirkel med radien 15 pixlar*/
     border-top: none; /*Tar bort delen av border som är på toppen*/
     background-color: rgb(0, 206, 235);
@@ -51,7 +49,7 @@ nav > ul{
 
 button{
     border: solid black 2px;
-    border-radius: 10px;
+    border-radius: 10px; /*rundar av alla hörnen av knapparna*/
     width: 150px;
     height: 40px;
     font-size: large;
@@ -64,7 +62,7 @@ button:hover{ /*Deklarationer skrivet inom detta kodblock ändrar bara egenskape
 }
 
 main{
-    grid-area: main;
+    grid-area: main; /*Sätter mains grid area till 'main'*/
     display: grid;
     font-size: large;
 }
@@ -79,7 +77,7 @@ section > ul{
 }
 
 footer{
-    grid-area: footer;
+    grid-area: footer; /*Sätter footers grid area till 'footer'*/
 }
 
 a:link{
