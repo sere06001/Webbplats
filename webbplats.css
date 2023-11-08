@@ -6,7 +6,7 @@ body{
     text-align: center; /*Centrerar all text som står inuti klassen 'wrapper'*/
     display: grid; /*Gör så att wrapper blir en grid container*/
     width: 100%; /*Sätter bredden på wrapper till 99vw*/
-    height: 100%; /*Sätter höjden av wrapper till 98vh*/
+    height: 98vh; /*Sätter höjden av wrapper till 98vh*/
     grid-template-rows: 100px 100px auto auto; /*Skapar fyra separata rader till grid:en*/
     grid-template-areas: /*Namnger grid:ens areor till 'header', 'nav', 'main' och 'footer*/
     "header"
